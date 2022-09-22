@@ -1,0 +1,117 @@
+.App {
+  margin-inline: 0;
+  margin-block: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+#divTopo{
+  display: flex;
+  background-color: #3498DB;
+  height: 100px;
+  align-items: center;
+}
+#siteName{
+  margin-left: 15px;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+#imgUser{
+  position: absolute;
+  right: 100px;
+  height: 50px;
+  width: 50px;
+  border-width: 0.5px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#nameUser{
+  position: absolute;
+  right: 170px;
+  font-size: 20px;
+}
+#menu{
+  position: absolute;
+  right: 10px;
+  background-color: #3498DB;
+  background-image: url('../img/menu50px.png');
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+  border: 0;
+  cursor: pointer;
+}
+#bar{
+  display: flex;
+  margin-inline: 0;
+  margin-block: 0;
+  align-items: center;
+  background-color: #154660;
+}
+#buttonOptions{
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  background-color: #154660;
+  border: none;
+  height: 30px;
+  width: 50px;
+  left: 125px;
+  color: #ff0000;
+  cursor: pointer;
+}
+#textMap{
+  position: absolute;
+  left: 500px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+  left: 450px;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 450px;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+#textOrder{
+  margin-left: 15px;
+  color: #fff;
+}
